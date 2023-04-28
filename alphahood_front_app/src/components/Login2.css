@@ -1,0 +1,54 @@
+.OnBoard {
+    /* border: solid 0.5px gray; */
+    width: 648px;
+    height: 704px;
+
+}
+
+.Logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#Company-logo {
+    margin: 7.2px auto
+}
+
+.Stepper-model {
+    border: solid #DAE0E6 2px;
+    border-radius: 8px;
+}
+
+.Head {
+    /* background-color: #FAFBFC;
+    width: 648px;
+    height: 108px;
+    display: flex;
+    justify-content: space-around; */
+
+    /* align-items: baseline; */
+}
+
+.logo {
+    /* display: flex;
+    align-items: center; */
+
+}
+.Head-logo{
+    /* margin-left:10px; */
+    display: table;
+}
+@media (max-width: 768px) {
+    .Head {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+      padding: 10px;
+    }
+    .logo {
+      margin: 10px;
+    }
+  }
+  
