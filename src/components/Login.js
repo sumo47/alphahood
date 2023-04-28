@@ -15,8 +15,8 @@ function Login2() {
                 <img src={Lookscout} alt="Company-Logo" id='Company-logo' />
             </div>
             <div className="Stepper-model">
-                <div className="contianer" style={{ width: "644px", height: "108px", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#FAFBFC", marginTop: "1.7px" }}>
-                    <div className="Head" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "552px", height: "60px" }}>
+                <div className="contianer" style={{ width: "100%", height: "15vh", display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: "#FAFBFC", marginTop: "0.08rem" }}>
+                    <div className="Head" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", width: "80vw", height: "100vh" }}>
                         <div className="logo" style={{ display: "table" }}>
                             <img className='Head-logo' src={Account} alt="Account" style={{ display: "table", padding: "0 0 8px 10px" }} />
                             <span >Account</span>

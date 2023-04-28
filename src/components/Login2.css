@@ -13,12 +13,12 @@
 }
 
 #Company-logo {
-    margin: 7.2px auto
+    margin: 1rem auto
 }
 
 .Stepper-model {
     border: solid #DAE0E6 2px;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 .Head {
