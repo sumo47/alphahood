@@ -36,19 +36,28 @@
     align-items: center; */
 
 }
-.Head-logo{
+
+.Head-logo {
     /* margin-left:10px; */
     display: table;
 }
+
 @media (max-width: 768px) {
     .Head {
-      flex-wrap: wrap;
-      justify-content: center;
-      height: auto;
-      padding: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        padding: 10px;
     }
+
     .logo {
-      margin: 10px;
+        margin: 1px;
     }
-  }
-  
+}
+
+input::placeholder {
+    color: #272D37;
+}
+input{
+    padding-left: 1rem
+}

@@ -1,6 +1,6 @@
 import React from 'react'
-import Login from './components/Login';
-import Login2 from './components/g';
+import Login from './components/BootStrap';
+import Login2 from './components/Login';
 
 
 function App() {
