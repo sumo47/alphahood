@@ -1,7 +1,6 @@
 import React from 'react'
 import Login from './components/BootStrap';
-import Login2 from './components/Responsive';
-import LastLogin from './components/LastLogin'
+import Login2 from './components/Login';
 
 
 function App() {
