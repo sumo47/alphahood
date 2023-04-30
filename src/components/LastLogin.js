@@ -43,22 +43,22 @@ function LastLogin(props) {
           <form action="#" className="form" style={{ backgroundColor: props.input }}>
             <div className="input-box">
               <label style={{ color: props.label }}>Name</label>
-              <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter full name" required />
+              <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter name" required />
             </div>
 
             <div className="input-box">
               <label style={{ color: props.label }}>Email</label>
-              <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter email address" required />
+              <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Email Address" required />
               <span className='info'>Please input real email address</span>
             </div>
-            <div className="input-box address">
+            <div className="input-box">
               <div className="column">
                 <div>
                   <label style={{ color: props.label }}> Password</label>
                   <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter password" required />
                   <span className='info'>Please Enter your password</span>
                 </div>
-                <div >
+                <div>
                   <label style={{ color: props.label }}> Confirm Password</label>
                   <input style={{ backgroundColor: props.inputColor, border: props.input }} type="number" placeholder="Enter confirm password" required />
                   <span className='info'>Passwords need to match</span>
@@ -66,7 +66,7 @@ function LastLogin(props) {
               </div>
             </div>
             <div className="check-box">
-              <input type="checkbox" />
+              <input type="checkbox" style={{height:""}}/>
               <label style={{ color: props.label }}>I accept the terms and Privacy Policy</label>
             </div>
           </form>
