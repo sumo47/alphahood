@@ -43,7 +43,7 @@ function LastLogin(props) {
           <form action="#" className="form" style={{ backgroundColor: props.input }}>
             <div className="input-box">
               <label style={{ color: props.label }}>Name</label>
-              <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter name" required />
+              <input style={{ backgroundColor: props.inputColor, border: props.input , color:props.label}} type="text" placeholder="Enter name" required />
             </div>
 
             <div className="input-box">
@@ -66,7 +66,7 @@ function LastLogin(props) {
               </div>
             </div>
             <div className="check-box">
-              <input type="checkbox" style={{height:""}}/>
+              <input type="checkbox" style={{ height: "" }} />
               <label style={{ color: props.label }}>I accept the terms and Privacy Policy</label>
             </div>
           </form>

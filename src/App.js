@@ -13,6 +13,7 @@ function App() {
   const [inputColor, setinputColor] = useState()
   const [headColor, setheadColor] = useState()
   const [headColor34, setheadColor34] = useState()
+  
 
   const Dark = () => {
     if(mode === "light"){
