@@ -48,19 +48,19 @@ function LastLogin(props) {
 
             <div className="input-box">
               <label style={{ color: props.label }}>Email</label>
-              <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Email Address" required />
+              <input style={{ backgroundColor: props.inputColor, border: props.input ,color:props.label}} type="text" placeholder="Email Address" required />
               <span className='info'>Please input real email address</span>
             </div>
             <div className="input-box">
               <div className="column">
                 <div>
                   <label style={{ color: props.label }}> Password</label>
-                  <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter password" required />
+                  <input style={{ backgroundColor: props.inputColor, border: props.input ,color:props.label}} type="text" placeholder="Enter password" required />
                   <span className='info'>Please Enter your password</span>
                 </div>
                 <div>
                   <label style={{ color: props.label }}> Confirm Password</label>
-                  <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter confirm password" required />
+                  <input style={{ backgroundColor: props.inputColor, border: props.input ,color:props.label}} type="text" placeholder="Enter confirm password" required />
                   <span className='info'>Passwords need to match</span>
                 </div>
               </div>
