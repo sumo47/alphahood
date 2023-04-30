@@ -60,7 +60,7 @@ function LastLogin(props) {
                 </div>
                 <div>
                   <label style={{ color: props.label }}> Confirm Password</label>
-                  <input style={{ backgroundColor: props.inputColor, border: props.input }} type="number" placeholder="Enter confirm password" required />
+                  <input style={{ backgroundColor: props.inputColor, border: props.input }} type="text" placeholder="Enter confirm password" required />
                   <span className='info'>Passwords need to match</span>
                 </div>
               </div>
