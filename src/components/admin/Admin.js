@@ -18,7 +18,8 @@ export default function LoginPage() {
                 const token = res.data.token;
                 localStorage.setItem("x-api-key", token)
                 Navigate('/SignUp')
-            }).catch((err) => {
+            })
+            .catch((err) => {
                 alert(err.response.data.message + err.response.status + " Error")
             })
     }
@@ -30,7 +31,7 @@ export default function LoginPage() {
                         <h1>Admin</h1>
                         <input type='email' placeholder="Email id" onChange={((e) => setEmail(e.target.value))} /><br />
                         <input type='password' placeholder="Password" onChange={((e) => setPassword(e.target.value))} /> <br />
-                        <input className="btn btn-primary" type="submit" placeholder="SUBMIT" value={"Login"}/><br />
+                        <input className="btn btn-primary" type="submit" placeholder="SUBMIT" value={"Login"} /><br />
                     </form>
                 </div>
             </div>
