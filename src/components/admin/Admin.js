@@ -8,9 +8,9 @@ export default function LoginPage() {
     const [password, setPassword] = useState("")
     const Navigate = useNavigate();
 
-    const userLogin = function (event) {
+    const userLogin = async function (event) {
         event.preventDefault();
-        axios.post('https://repulsive-foal-flannel-nightgown.cyclic.app/admin', {
+        await axios.post('https://repulsive-foal-flannel-nightgown.cyclic.app/admin', {
             email, password
         })
             .then((res) => {
