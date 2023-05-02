@@ -1,14 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import { createRoot } from 'react-dom/client';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import Admin from './components/admin/Admin'
+import SignUpController from './components/user/SignUpController';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = createRoot(rootElement);
+
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<Admin />} />
+                <Route path='/SignUp' element={<SignUpController/>} />
+            </Routes>
+        </BrowserRouter>
+    </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
