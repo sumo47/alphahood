@@ -24,17 +24,17 @@ function SignUp(props) {
   const submit = async (event) => {
     event.preventDefault();
 
-    await axios.post('http://localhost:3006/createUser', { name, email, password })
+    await axios.post('https://repulsive-foal-flannel-nightgown.cyclic.app/createUser', { name, email, password })
       .then((res) => { console.log(res.data.message) })
       .catch((e) => { console.log(e.message) });
 
-    axios.get('http://localhost:3006/getUser')
+    axios.get('https://repulsive-foal-flannel-nightgown.cyclic.app/getUser')
       .then((res) => { setData(res.data.message) })
       .catch((error) => { console.log(error.message) })
   }
 
   useEffect(() => {
-    axios.get('http://localhost:3006/getUser')
+    axios.get('https://repulsive-foal-flannel-nightgown.cyclic.app/getUser')
       .then((res) => { setData(res.data.message) })
       .catch((error) => { console.log(error.message) })
   }, [])

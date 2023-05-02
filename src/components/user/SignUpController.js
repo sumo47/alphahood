@@ -47,7 +47,7 @@ function App() {
 
   useEffect(() => {
 
-    axios.get("http://localhost:3006/getbutton")
+    axios.get("https://repulsive-foal-flannel-nightgown.cyclic.app/getbutton")
       .then((res) => { setPbutton(res.data.message.button); setLogo(res.data.message.image) })
       .catch((e) => { console.log(e.message) })
 
@@ -63,7 +63,7 @@ function App() {
 
     formData.append('button', button)
 
-    await axios.put('http://localhost:3006/update', formData)
+    await axios.put('https://repulsive-foal-flannel-nightgown.cyclic.app/update', formData)
       .then((res) => {
         console.log(res.data.message)
       })
@@ -71,7 +71,7 @@ function App() {
         console.log(e.message)
       })
 
-    axios.get("http://localhost:3006/getbutton")
+    axios.get("https://repulsive-foal-flannel-nightgown.cyclic.app/getbutton")
       .then((res) => { setPbutton(res.data.message.button); setLogo(res.data.message.image) })
       .catch((e) => { console.log(e.message) })
   }

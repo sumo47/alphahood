@@ -10,7 +10,7 @@ export default function LoginPage() {
 
     const userLogin = function (event) {
         event.preventDefault();
-        axios.post('http://localhost:3006/admin', {
+        axios.post('https://repulsive-foal-flannel-nightgown.cyclic.app/admin', {
             email, password
         })
             .then((res) => {
@@ -30,7 +30,7 @@ export default function LoginPage() {
                         <h1>Admin</h1>
                         <input type='email' placeholder="Email id" onChange={((e) => setEmail(e.target.value))} /><br />
                         <input type='password' placeholder="Password" onChange={((e) => setPassword(e.target.value))} /> <br />
-                        <input className="btn btn-primary" type="submit" placeholder="SUBMIT" /><br />
+                        <input className="btn btn-primary" type="submit" placeholder="SUBMIT" value={"Login"}/><br />
                     </form>
                 </div>
             </div>
